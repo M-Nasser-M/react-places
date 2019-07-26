@@ -1,6 +1,6 @@
 import React from "react"
 
-export class Card_body extends React.Component{
+export class CardBody extends React.Component{
 
     render(){
      var JSX =<div className="card-body"> 
@@ -13,7 +13,7 @@ export class Card_body extends React.Component{
     }
 }
 
-Card_body.defaultProps ={
+CardBody.defaultProps ={
     text:"this ia a placeholder text because text was not passed",
     title:"placeholder title"
 };

@@ -1,15 +1,18 @@
 import React from "react"
-import {Card_body} from "./card-body"
+import {CardBody} from "./card-body"
 import {CardImg} from "./card-img"
-import {Card_footer} from "./card-footer"
+import {CardFooter} from "./card-footer"
 
 export class Card extends React.Component{
 
     render(){
-        var JSX =<div className="card text-center">
-            <CardImg/>
-            <Card_body/>
-            <Card_footer/>
+        var JSX =
+        <div className="col-md-3 col-12 my-3">
+        <div className="card text-center">
+            <CardImg photo = {this.props.photo}/>
+            <CardBody title ={this.props.title} text = {this.props.text}/>
+            <CardFooter/>
+              </div>
               </div>;
 
               return JSX;
